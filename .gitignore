@@ -1,0 +1,14 @@
+application/cache/*
+images/cache/*
+uploads/*
+videos/*
+tests/*
+node_modules/*
+node_modules
+!index.html
+db/*
+!dump.sql
+*.DS_Store
+*Thumbs.db
+.DS_Store
+Thumbs.db

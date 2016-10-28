@@ -1,0 +1,256 @@
+//*******************************************************************************
+// This file contains CSS helper classes.
+//*******************************************************************************
+
+//
+// Clear Fix
+//
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+
+//
+// Clear both
+//
+.clear {
+  clear: both;
+}
+
+
+
+//
+// Highlight Element
+//
+.mark {
+  background-color: yellow;
+}
+
+
+
+//
+// Text Alignment classes
+//
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
+
+
+
+//
+// Text Transformation classes
+//
+.text-lowercase  { text-transform: lowercase; }
+.text-uppercase  { text-transform: uppercase; }
+
+
+
+//
+// two columns
+//
+.two-columns {
+  @include breakpoint(md) {
+    @include columns();
+  }
+}
+
+
+
+//
+// Position relative
+//
+.relative {
+  position: relative;
+}
+
+
+
+//
+// Fixed Body Helper body.locked
+//
+.locked {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  background-color: transparent;
+  border:0
+}
+
+
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+//
+// Only display content to screen readers
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+
+//
+// Lazy Loading
+//
+// .lazyload,
+// .lazyloading {
+//   background: url(../images/img-loading.svg) center center no-repeat #f0f0f0;
+//   background-size: 50px;
+//   min-height: 60px;
+// }
+
+// .lazyloading {
+//   @include opacity(.8);
+// }
+
+
+
+//
+// Showing & Hiding Content Helpers
+//
+.visible-xs,
+.visible-sm,
+.visible-sl,
+.visible-md,
+.visible-lg,
+.visible-xl {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: $breakpoint-sm - 1px) {
+  .visible-xs { display: block !important; }
+  .hidden-xs  { display: none !important; }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-sl - 1px) {
+  .visible-sm { display: block !important; }
+  .hidden-sm  { display: none !important; }
+}
+
+@media (min-width: $breakpoint-sl) and (max-width: $breakpoint-md - 1px) {
+  .visible-sl { display: block !important; }
+  .hidden-sl  { display: none !important; }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1px) {
+  .visible-md { display: block !important; }
+  .hidden-md  { display: none !important; }
+}
+
+@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl - 1px) {
+  .visible-lg { display: block !important; }
+  .hidden-lg  { display: none !important; }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .visible-xl { display: block !important; }
+  .hidden-xl  { display: none !important; }
+}
+
+
+
+
+//
+// Grid Displayer
+//
+@if $showGridDisplayer == true {
+  #grid-displayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: padding-box;
+    pointer-events: none;
+    z-index: -10;
+  }
+
+  #grid-displayer .gd-container,
+  #grid-displayer .gd-row,
+  #grid-displayer .gd-column {
+    height: 100%;
+  }
+
+  #grid-displayer .gd-column {
+    border-width: 0 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    padding: 0px;
+    outline: blue solid 1px;
+    @include opacity(.06);
+    background-color: blue;
+    float: left;
+    width: 8.33333%;
+
+    @include breakpoint(sm) {
+      border-width: 0 15px;
+    }
+    @include breakpoint(xl) {
+      border-width: 0 20px;
+    }
+  }
+}
+
+@if $showGridDisplayer == false {
+  #grid-displayer {
+    display: none !important;
+  }
+}
+
+
+

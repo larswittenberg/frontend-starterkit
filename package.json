@@ -1,0 +1,12 @@
+{
+  "name": "Starterkit",
+  "version": "0.0.1",
+  "description": "Description",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest"
+  }
+}

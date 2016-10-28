@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+//
+// Settings
+//
+// Einfach Reihenfolge der true/false Zeilen ändern,
+// zum einfachen aktivieren/deaktivieren
+//
+$media-queries-debugging: true;
+$media-queries-debugging: false;
+$showGridDisplayer: false;
+$showGridDisplayer: true;
+
+
+//
+// Breakpoints
+//
+$breakpoint-sm:  640px;
+$breakpoint-sl:  768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1520px;
+
+
+
+//
+// Grid Gutter
+//
+$grid-gutter-width-xs: 20px;
+$grid-gutter-width-sm: 30px;
+$grid-gutter-width-sl: 30px;
+$grid-gutter-width-md: 30px;
+$grid-gutter-width-lg: 30px;
+$grid-gutter-width-xl: 40px;
+$grid-gutter-width: 40px;
+
+
+
+//
+// Grid Sizes
+//
+$grid-columns: 12;
+$grid-gutter-width: 40px !default;
+
+$container-xs-max-width: 380px;
+
+$container-tablet: 570px + $grid-gutter-width-sm + $grid-gutter-width-sm;
+$container-sm: $container-tablet; // For $screen-sm-min and up.
+
+$container-sl: 690px + $grid-gutter-width-sl + $grid-gutter-width-sl;
+
+$container-desktop: 930px + $grid-gutter-width-md + $grid-gutter-width-md;
+$container-md: $container-desktop; // For $screen-md-min and up.
+
+$container-large-desktop: 1170px + $grid-gutter-width-lg + $grid-gutter-width-lg;
+$container-lg: $container-large-desktop; // For $screen-lg-min and up.
+
+$container-xtralarge-desktop: 1400px + $grid-gutter-width-xl + $grid-gutter-width-xl;
+$container-xl: $container-xtralarge-desktop; // For $screen-lg-min and up.
+
+
+
+
+
+
+
+//
+// Fonts
+// @font-face declarations find in base/_fonts.scss
+//
+
+
+
+
+//
+// Colors
+//
+
+
+
+
+
+
+
+
+
