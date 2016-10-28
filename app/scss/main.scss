@@ -23,50 +23,21 @@
   'base/color-helpers';
 
 
-/*
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/header-homepage',
-  'layout/page-wrapper',
-  'layout/template-head',
-  'layout/template-story-look',
-  'layout/template-kommune',
   'layout/footer';
 
 // 5. Components
 @import
-  'components/button',
-  'components/content--text-columns',
-  'components/content--floating-image',
-  'components/downloaditem',
-  'components/forms',
-  'components/icons',
-  'components/lists',
-  'components/figcaption',
-  'components/picture-elements',
-  'components/videoplayer',
-  'components/swiper-slider',
-  'components/section',
-  'components/sharing',
-  'components/iframe',
-  'components/isotope',
-  'components/separator-line',
-  'components/teaser-bar',
-  'components/related-posts',
-  'components/section-with-backgroundimage',
-  'components/blogpost',
-  'components/tiles--theme',
-  'components/tiles--mediaitem',
-  'components/tiles--blogpost';
-
+  'components/buttons';
 
 
 // 6. Page-specific styles
 @import
   'pages/home';
 
+
 // 7. Themes
 @import
   'themes/default';
-*/
