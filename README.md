@@ -10,3 +10,5 @@ Grundgerüst für Frontend-Projekte mit Browsersync, SASS, jQuery und dem wegmei
 * Bootstrap 4 Spacer Schema integrieren
 * Modernizr?
 * Weitere HTML5 Boilerplate Elemente übernehmen?
+* Google Analytics
+* Breakpoint Debugger
