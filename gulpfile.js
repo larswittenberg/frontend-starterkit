@@ -13,7 +13,7 @@ gulp.task('serve', ['sass'], function() {
       server: "./app"
   });
 
-  gulp.watch("app/scss/*.scss", ['sass']);
+  gulp.watch("app/scss/**/*.*", ['sass']);
   gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
@@ -23,7 +23,7 @@ gulp.task('serve', ['sass'], function() {
 // Compile Sass into CSS & auto-inject into browsers
 //
 gulp.task('sass', function() {
-  return gulp.src("app/scss/*.scss")
+  return gulp.src("app/scss/**/*.*")
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write('./'))
