@@ -19,29 +19,74 @@ h2,
 h3,
 h4,
 h5,
-h6 {}
+h6 {
+  font-weight: 300;
+  margin-bottom: 27px;
+}
 
 
 
 //
 // h1
 //
-h1 {}
+h1 {
+  font-size: 38px;
+}
 
 
 
 //
 // h2
 //
-h2 {}
+h2 {
+  font-size: 30px;
+  //margin-bottom: 20px;
+}
 
 
 
 //
 // h3
 //
-h3 {}
+h3 {
+  font-size: 22px;
+  //margin-bottom: 10px;
+}
 
 
 
+//
+// h4
+//
+h4 {
+  font-size: 16px;
+  //margin-bottom: 10px;
+}
 
+
+
+//
+//
+//
+p {
+  font-size: 17px;
+  line-height: 1.55;
+  margin-bottom: 27px;
+}
+
+
+
+.article__preline {
+  font-size: 15px;
+  font-weight: 600;
+  color: red;
+  display: block;
+}
+.article__headline {}
+.article__title {}
+.article__teaser {
+  font-size: 22px;
+}
+.article__metadata {
+  font-size: 12px;
+}
