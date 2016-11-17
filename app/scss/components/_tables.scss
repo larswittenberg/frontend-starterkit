@@ -1,0 +1,27 @@
+//*******************************************************************************
+// TABLES
+//*******************************************************************************
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+  th,
+  td {
+    padding: 1rem;
+  }
+
+  th {
+    text-align: left;
+    border-bottom: 1px solid #000;
+  }
+
+
+}
+
+
+.table--striped {}
+
+
+.table--hover {}

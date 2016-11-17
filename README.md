@@ -3,6 +3,12 @@
 Grundgerüst für Frontend-Projekte mit Browsersync, SASS, jQuery und dem wegmeister Grid.
 
 
+## CSS Framework Inspiration
+* Bootstrap
+* [Spectre](http://picturepan2.github.io/spectre/)
+* [Skeleton](http://getskeleton.com/)
+
+
 ## Todos
 
 * Autoprefixer

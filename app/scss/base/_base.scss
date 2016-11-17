@@ -9,6 +9,7 @@
  */
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 /**
@@ -84,7 +85,7 @@ figure {
 input,
 textarea {
   border-radius: 0;
-  -webkit-appearance: none;
+  //-webkit-appearance: none;
 }
 
 
