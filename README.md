@@ -19,6 +19,9 @@ Grundgerüst für Frontend-Projekte mit Browsersync, SASS, jQuery und dem wegmei
 * Google Analytics
 * Breakpoint Debugger
 * Styleguide Template aufbauen
+* Text Helper Klassen
+  * `.text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }`
+  * `.text-nowrap { white-space: nowrap; }`
 
 
 ## Styleguide
