@@ -30,6 +30,7 @@ Grundgerüst für Frontend-Projekte mit Browsersync, SASS, jQuery und dem wegmei
 * Fixed Navi in der Kopfzeile
 * Sprungmarken zu den Abschnitten
   * Fonts
+    * Alle Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen in allen Projekt-Fonts ausgeben
   * Typo
   * Helper
   * Grid
