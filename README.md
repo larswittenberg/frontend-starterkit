@@ -15,6 +15,7 @@ Grundgerüst für Frontend-Projekte mit Browsersync, SASS, jQuery und dem wegmei
 * Weitere HTML5 Boilerplate Elemente übernehmen?
 * Breakpoint Debugger
 * Styleguide Template aufbauen
+* SCSS Colors Map + Helper Klassen generieren
 
 
 ## Styleguide

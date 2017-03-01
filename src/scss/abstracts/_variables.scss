@@ -11,8 +11,16 @@
 //
 $media-queries-debugging: true;
 $media-queries-debugging: false;
-$showGridDisplayer: false;
 $showGridDisplayer: true;
+$showGridDisplayer: false;
+
+
+
+//
+// Colors
+//
+$dark: #193549;
+$orange: #fe8906;
 
 
 
@@ -65,20 +73,6 @@ $container-xl: $container-xtralarge-desktop; // For $screen-lg-min and up.
 
 
 
-
-
-
-//
-// Fonts
-// @font-face declarations find in base/_fonts.scss
-//
-
-
-
-
-//
-// Colors
-//
 
 
 

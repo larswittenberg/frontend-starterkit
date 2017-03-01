@@ -1,3 +1,6 @@
+#grid-displayer {
+  display: none !important; }
+
 body:before {
   position: absolute;
   z-index: -1;
@@ -649,18 +652,6 @@ small,
 .font-italic {
   font-style: italic; }
 
-.article__preline {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: red;
-  display: block; }
-
-.article__teaser {
-  font-size: 2rem; }
-
-.article__metadata {
-  font-size: 1.2rem; }
-
 .clearfix::after {
   display: block;
   content: "";
@@ -840,51 +831,14 @@ small,
   .hidden-xl {
     display: none !important; } }
 
-#grid-displayer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: padding-box;
-  pointer-events: none;
-  z-index: -10; }
-
-#grid-displayer .gd-container,
-#grid-displayer .gd-row,
-#grid-displayer .gd-column {
-  height: 100%; }
-
-#grid-displayer .gd-column {
-  border-width: 0 10px;
-  border-style: solid;
-  border-color: white;
-  padding: 0px;
-  outline: blue solid 1px;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=6)";
-  filter: alpha(opacity=6);
-  -moz-opacity: 0.06;
-  -khtml-opacity: 0.06;
-  opacity: 0.06;
-  background-color: blue;
-  float: left;
-  width: 8.33333%; }
-  @media (min-width: 640px) {
-    #grid-displayer .gd-column {
-      border-width: 0 15px; } }
-  @media (min-width: 1520px) {
-    #grid-displayer .gd-column {
-      border-width: 0 20px; } }
-
 .container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px; }
-  .container:before, .container:after {
-    content: " ";
-    display: table; }
-  .container:after {
+  .container::after {
+    display: block;
+    content: "";
     clear: both; }
   @media (min-width: 640px) {
     .container {
@@ -918,10 +872,9 @@ small,
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px; }
-  .container-fluid:before, .container-fluid:after {
-    content: " ";
-    display: table; }
-  .container-fluid:after {
+  .container-fluid::after {
+    display: block;
+    content: "";
     clear: both; }
   @media (min-width: 640px) {
     .container-fluid {
@@ -935,10 +888,9 @@ small,
 .row {
   margin-left: -10px;
   margin-right: -10px; }
-  .row:before, .row:after {
-    content: " ";
-    display: table; }
-  .row:after {
+  .row::after {
+    display: block;
+    content: "";
     clear: both; }
 
 @media (min-width: 640px) {
