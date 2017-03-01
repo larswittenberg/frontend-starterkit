@@ -4,29 +4,21 @@ Grundgerüst für Frontend-Projekte mit Browsersync, SASS, jQuery und dem wegmei
 
 
 ## CSS Framework Inspiration
-* Bootstrap
+* [Bootstrap V4](https://v4-alpha.getbootstrap.com/)
 * [Spectre](http://picturepan2.github.io/spectre/)
 * [Skeleton](http://getskeleton.com/)
 
 
 ## Todos
 
-* Autoprefixer
 * JavaScript minifizieren
-* Bootstrap 4 Spacer Schema integrieren
-* Modernizr?
 * Weitere HTML5 Boilerplate Elemente übernehmen?
-* Google Analytics
 * Breakpoint Debugger
 * Styleguide Template aufbauen
-* Text Helper Klassen
-  * `.text-truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }`
-  * `.text-nowrap { white-space: nowrap; }`
 
 
 ## Styleguide
 
-* Extra Datei und SCSS dafür auslagern, oder per inline in die HTML Datei
 * Fixed Navi in der Kopfzeile
 * Sprungmarken zu den Abschnitten
   * Fonts

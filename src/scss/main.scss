@@ -4,13 +4,13 @@
 @import
   'abstracts/variables',
   'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/styleguide';
+  'abstracts/mixins';
 
 
 // 2. Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
+  'vendor/bootstrap-reboot';
 
 
 // 3. Base stuff

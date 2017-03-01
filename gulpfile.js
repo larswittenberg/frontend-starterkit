@@ -1,7 +1,10 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
-var sourcemaps  = require('gulp-sourcemaps');
+var gulp        = require('gulp'),
+    browserSync = require('browser-sync').create(),
+    sass        = require('gulp-sass'),
+    sourcemaps  = require('gulp-sourcemaps'),
+    plumber     = require('gulp-plumber'),
+    autoprefixer= require('gulp-autoprefixer');
+
 
 
 //
@@ -10,11 +13,11 @@ var sourcemaps  = require('gulp-sourcemaps');
 gulp.task('serve', ['sass'], function() {
 
   browserSync.init({
-      server: "./app"
+      server: './dist'
   });
 
-  gulp.watch("app/scss/**/*.*", ['sass']);
-  gulp.watch("app/*.html").on('change', browserSync.reload);
+  gulp.watch('./src/scss/**/*.*', ['sass']);
+  gulp.watch('./src/*.html', ['copy']).on('change', browserSync.reload);
 });
 
 
@@ -23,12 +26,31 @@ gulp.task('serve', ['sass'], function() {
 // Compile Sass into CSS & auto-inject into browsers
 //
 gulp.task('sass', function() {
-  return gulp.src("app/scss/**/*.*")
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest("app/css"))
-    .pipe(browserSync.stream());
+  return gulp.src('./src/scss/**/*.*')
+    .pipe( plumber() )
+    .pipe( sourcemaps.init() )
+    .pipe( sass() )
+    .pipe( autoprefixer() )
+    .pipe( sourcemaps.write('./') )
+    .pipe( gulp.dest('./dist/css') )
+    .pipe( browserSync.stream() );
 });
 
-gulp.task('default', ['serve']);
+
+
+//
+// Copy Task
+//
+gulp.task('copy', function() {
+  gulp.src([
+    './src/*.html'
+  ])
+  .pipe( gulp.dest('./dist') );
+});
+
+
+
+//
+// Default Task
+//
+gulp.task('default', ['serve', 'copy']);

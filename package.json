@@ -1,12 +1,14 @@
 {
-  "name": "Starterkit",
+  "name": "Frontend-Starterkit",
   "version": "0.0.1",
-  "description": "Description",
+  "description": "My personal Frontend Starterkit",
   "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "latest",
     "gulp": "latest",
     "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest"
+    "gulp-sourcemaps": "latest",
+    "gulp-plumber": "latest",
+    "gulp-autoprefixer": "latest"
   }
 }
