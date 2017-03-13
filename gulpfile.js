@@ -49,8 +49,26 @@ gulp.task('copy', function() {
 });
 
 
+//
+// copy dist to docs
+//
+gulp.task('copydocs', function() {
+  gulp.src([
+    './dist/**/*.*'
+  ])
+  .pipe( gulp.dest('./docs') );
+});
+
+
 
 //
 // Default Task
 //
 gulp.task('default', ['serve', 'copy']);
+
+
+
+//
+// Build GitHub Pages - copy files for github-pages branch (/docs)
+//
+gulp.task('build', ['copydocs']);
