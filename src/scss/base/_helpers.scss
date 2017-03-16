@@ -223,6 +223,12 @@
 //
 // Showing & Hiding Content Helpers
 //
+.visible-xs-inline-block,
+.visible-sm-inline-block,
+.visible-sl-inline-block,
+.visible-md-inline-block,
+.visible-lg-inline-block,
+.visible-xl-inline-block,
 .visible-xs,
 .visible-sm,
 .visible-sl,
@@ -237,31 +243,37 @@
 }
 
 @media (max-width: $breakpoint-sm - 1px) {
+  .visible-xs-inline-block { display: inline-block !important; }
   .visible-xs { display: block !important; }
   .hidden-xs  { display: none !important; }
 }
 
 @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-sl - 1px) {
+  .visible-sm-inline-block { display: inline-block !important; }
   .visible-sm { display: block !important; }
   .hidden-sm  { display: none !important; }
 }
 
 @media (min-width: $breakpoint-sl) and (max-width: $breakpoint-md - 1px) {
+  .visible-sl-inline-block { display: inline-block !important; }
   .visible-sl { display: block !important; }
   .hidden-sl  { display: none !important; }
 }
 
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1px) {
+  .visible-md-inline-block { display: inline-block !important; }
   .visible-md { display: block !important; }
   .hidden-md  { display: none !important; }
 }
 
 @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl - 1px) {
+  .visible-lg-inline-block { display: inline-block !important; }
   .visible-lg { display: block !important; }
   .hidden-lg  { display: none !important; }
 }
 
 @media (min-width: $breakpoint-xl) {
+  .visible-xl-inline-block { display: inline-block !important; }
   .visible-xl { display: block !important; }
   .hidden-xl  { display: none !important; }
 }
