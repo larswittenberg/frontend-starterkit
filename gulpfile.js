@@ -3,6 +3,7 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     sourcemaps  = require('gulp-sourcemaps'),
     plumber     = require('gulp-plumber'),
+    notify      = require('gulp-notify'),
     autoprefixer= require('gulp-autoprefixer');
 
 
@@ -23,11 +24,20 @@ gulp.task('serve', ['sass'], function() {
 
 
 //
+// Notify Tasks
+//
+function scssError(error){
+  return "\n"+error.message+"\n";
+}
+
+
+
+//
 // Compile Sass into CSS & auto-inject into browsers
 //
 gulp.task('sass', function() {
   return gulp.src('./src/scss/**/*.*')
-    .pipe( plumber() )
+    .pipe( plumber( {errorHandler: notify.onError(scssError)} ) )
     .pipe( sourcemaps.init() )
     .pipe( sass() )
     .pipe( autoprefixer() )
