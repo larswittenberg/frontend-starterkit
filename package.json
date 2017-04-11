@@ -8,6 +8,7 @@
     "gulp": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
+    "gulp-notify": "latest",
     "gulp-plumber": "latest",
     "gulp-autoprefixer": "latest"
   }
