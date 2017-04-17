@@ -1966,44 +1966,6 @@ small,
 .text-color--white {
   color: #fff; }
 
-.blockquote {
-  position: relative;
-  background-color: #000;
-  color: #fff;
-  padding: 40px 20px;
-  margin-top: 40px; }
-  @media (min-width: 1024px) {
-    .blockquote {
-      padding: 60px 30px;
-      margin-top: 140px; } }
-  @media (min-width: 1280px) {
-    .blockquote {
-      padding: 80px 40px;
-      margin-top: 200px; } }
-
-.blockquote p {
-  font-family: "Font Family Bold Name", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  margin-bottom: 40px; }
-  @media (min-width: 1024px) {
-    .blockquote p {
-      font-size: 2.4rem; } }
-  @media (min-width: 1280px) {
-    .blockquote p {
-      font-size: 3rem; } }
-  @media (min-width: 1520px) {
-    .blockquote p {
-      font-size: 3.4rem; } }
-
-.blockquote__footer cite {
-  font-size: 18px;
-  font-style: normal; }
-  @media (min-width: 1024px) {
-    .blockquote__footer cite {
-      font-size: 20px; } }
-
 .form-control {
   display: block;
   width: 100%;

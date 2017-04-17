@@ -2,55 +2,14 @@
 // BLOCKQUOTE
 //*******************************************************************************
 
-.blockquote {
-  position: relative;
-  background-color: #000;
-  color: #fff;
-  padding: 40px 20px;
-  margin-top: 40px;
-
-  @include breakpoint(md) {
-    padding: 60px 30px;
-    margin-top: 140px;
-  }
-
-  @include breakpoint(lg) {
-    padding: 80px 40px;
-    margin-top: 200px;
-  }
-}
+.blockquote {}
 
 
 
 //
-.blockquote p {
-  font-family: $font-bold;
-  font-weight: normal;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  margin-bottom: 40px;
-
-  @include breakpoint(md) {
-    font-size: 2.4rem;
-  }
-
-  @include breakpoint(lg) {
-    font-size: 3rem;
-  }
-
-  @include breakpoint(xl) {
-    font-size: 3.4rem;
-  }
-}
+.blockquote p {}
 
 
 
 //
-.blockquote__footer cite {
-  font-size: 18px;
-  font-style: normal;
-
-  @include breakpoint(md) {
-    font-size: 20px;
-  }
-}
+.blockquote__footer cite {}
