@@ -11,8 +11,8 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#193549">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/ext/lazysizes.min.js" async></script>
     <style>
       .styleguide {
         margin-top: 60px;
@@ -29,11 +29,54 @@
 
       .sg-hr {
         margin: 60px 0;
+        border: none;
+        border-top: 2px solid #e2e2e2;
       }
 
-      .sg-color-box {
-        height: 100px;
+      .sg-code {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #bd4147;
+        background-color: #f7f7f9;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+
+      .sg-headline .sg-code {
+        margin-bottom: 0;
+      }
+
+      .sg-colorbox {
+        width: 200px;
+        height: 300px;
         margin-bottom: 10px;
+        box-shadow: 4px 4px 10px rgba(64, 62, 62, 0.32);
+        background-color: #fff;
+      }
+
+      .sg-colorbox__color {
+        height: 200px;
+      }
+
+      .sg-colorbox__label {
+        padding: 4px 8px;
+      }
+
+      .sg-colorbox__label {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .sg-colorbox .sg-code {
+        margin: 0 4px;
+        width: calc(100% - 8px);
+        background-color: transparent;
+      }
+
+      .sg-helper-visible .menu-button {
+        display: block;
       }
     </style>
   </head>
@@ -72,29 +115,48 @@
 
 
       <div class="row sg-row">
-        <div class="col-sm-3 col-md-2">
+        <div class="col-md-2">
           <h1 class="sg-headline" id="farben">Farben</h1>
         </div>
-        <div class="col-sm-3 col-md-2">
-          <div class="sg-color-box" style="background-color: #193549;"></div>
-          <p class="sg-color-box__label"><code>$dark</code><br><code>#193549</code></p>
-        </div>
-        <div class="col-sm-3 col-md-2">
-          <div class="sg-color-box" style="background-color: #fe8906;"></div>
-          <p class="sg-color-box__label"><code>$orange</code><br><code>#fe8906</code></p>
+        <div class="col-md-2">
+          <div class="sg-colorbox">
+            <div class="sg-colorbox__color" style="background-color: #459bd5;"></div>
+            <p class="sg-colorbox__label">Brand Color Blue</p>
+            <code class="sg-code">$blue <br> #459bd5</code>
+          </div>
         </div>
       </div>
 
 <hr class="sg-hr">
 
       <div class="row sg-row">
-        <div class="col-sm-3 col-md-2">
-          <h1 class="sg-headline" id="font">Fonts</h1>
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="fonts">Fonts</h1>
         </div>
-        <div class="col-md-10">
-          <h1 class="sg-headline">Font-Stack regular</h1>
+        <div class="col-md-10 mb-5">
+          <h1 class="sg-headline">Font-Stack default <code class="sg-code">$font-default</code></h1>
           <p>-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;</p>
           <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&</p>
+          <p>&nbsp;</p>
+          <h1 class="sg-headline mb-2">Font-Stack Regular <code class="sg-code">$font-regular</code></h1>
+          <p class="font-regular">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&amp;</p>
+          <p>&nbsp;</p>
+          <h1 class="sg-headline mb-2">Font-Stack Bold <code class="sg-code">$font-bold</code></h1>
+          <p class="font-bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&amp;</p>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="logo">Logo</h1>
+        </div>
+        <div class="col-md-3">
+          <code class="sg-code">.logo</code>
+          <p>
+            <img src="images/logo.svg" alt="Logo" class="logo logo--blue" width="200" height="150">
+          </p>
         </div>
       </div>
 
@@ -162,23 +224,25 @@
 <hr class="sg-hr">
 
       <div class="row sg-row">
-        <div class="col-sm-3 col-md-2">
+        <div class="col-md-2">
           <h1 class="sg-headline" id="listen">Listen</h1>
         </div>
-        <div class="col-md-3">
-          <ul class="list-unstyled">
+        <div class="col-md-2">
+          <code class="sg-code">ol.list</code>
+          <ol class="list">
             <li>list item 1</li>
             <li>list item 2
-              <ul>
+              <ol>
                 <li>list item 2.1</li>
                 <li>list item 2.2</li>
                 <li>list item 2.3</li>
-              </ul>
+              </ol>
             </li>
             <li>list item 3</li>
-          </ul>
+          </ol>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
+          <code class="sg-code">ul.list</code>
           <ul class="list">
             <li>list item 1</li>
             <li>list item 2
@@ -191,18 +255,37 @@
             <li>list item 3</li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <ol class="list">
+        <div class="col-md-2">
+          <code class="sg-code">.list--unstyled</code>
+          <ul class="list--unstyled">
             <li>list item 1</li>
             <li>list item 2
-              <ol>
+              <ul>
                 <li>list item 2.1</li>
                 <li>list item 2.2</li>
                 <li>list item 2.3</li>
-              </ol>
+              </ul>
             </li>
             <li>list item 3</li>
-          </ol>
+          </ul>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="blockquote">Blockquote</h1>
+        </div>
+        <div class="col-md-9">
+          <blockquote class="blockquote">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque delectus quod esse, nihil voluptatem fugiat, ullam recusandae repellendus alias repudiandae, maxime, est excepturi unde explicabo harum. Nisi et, laboriosam hic!
+            </p>
+            <footer class="blockquote__footer">
+              <cite>Autor vom Zitat</cite>
+            </footer>
+          </blockquote>
         </div>
       </div>
 
@@ -264,16 +347,25 @@
         </div>
       </div>
 
+<hr class="sg-hr">
 
-    </div>
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="xxx">xxx</h1>
+        </div>
+        <div class="col-md-10">
+
+        </div>
+      </div>
 
 
+    </div><!-- .container.styleguide -->
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<!--
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+
+    <script src="js/ext/jquery-3.1.custom.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/ext/jquery-3.1.1.min.js"><\/script>')</script>
     <script src="js/main.js"></script>
-     -->
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
@@ -283,3 +375,4 @@
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>
+
