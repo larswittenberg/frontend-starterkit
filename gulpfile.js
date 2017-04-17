@@ -6,19 +6,19 @@ var gulp        = require('gulp'),
     notify      = require('gulp-notify'),
     autoprefixer= require('gulp-autoprefixer');
 
-
-
 //
 // Static Server + watching scss/html files
 //
 gulp.task('serve', ['sass'], function() {
 
   browserSync.init({
-      server: './dist'
+      server: './dist',
+      notify: false
   });
 
   gulp.watch('./src/scss/**/*.*', ['sass']);
-  gulp.watch('./src/*.html', ['copy']).on('change', browserSync.reload);
+  gulp.watch('./src/js/**/*.*', ['copyjs']).on('change', browserSync.reload);
+  gulp.watch('./src/*.html', ['copyhtml']).on('change', browserSync.reload);
 });
 
 
@@ -43,15 +43,16 @@ gulp.task('sass', function() {
     .pipe( autoprefixer() )
     .pipe( sourcemaps.write('./') )
     .pipe( gulp.dest('./dist/css') )
+    .pipe( gulp.dest(publicFolder + 'css') )
     .pipe( browserSync.stream() );
 });
 
 
 
 //
-// Copy Task
+// Copy Task - HTML
 //
-gulp.task('copy', function() {
+gulp.task('copyhtml', function() {
   gulp.src([
     './src/*.html'
   ])
@@ -59,26 +60,46 @@ gulp.task('copy', function() {
 });
 
 
+
 //
-// copy dist to docs
+// Copy Task - Images
 //
-gulp.task('copydocs', function() {
+gulp.task('copyimages', function() {
   gulp.src([
-    './dist/**/*.*'
+    './src/images/**/*.*'
   ])
-  .pipe( gulp.dest('./docs') );
+  .pipe( gulp.dest('./dist/images') );
 });
 
+
+//
+// Copy Task - JavaScript
+//
+gulp.task('copyjs', function() {
+  gulp.src([
+    './src/js/**/*.*'
+  ])
+  .pipe( gulp.dest('./dist/js') );
+});
+
+
+
+//
+// Copy Task - Fonts
+//
+gulp.task('copyfonts', function() {
+  gulp.src([
+    './src/fonts/**/*.*'
+  ])
+  .pipe( gulp.dest('./dist/fonts') );
+});
+
+
+gulp.task('copy', ['copyhtml', 'copyimages', 'copyjs', 'copyfonts']);
 
 
 //
 // Default Task
 //
 gulp.task('default', ['serve', 'copy']);
-
-
-
-//
-// Build GitHub Pages - copy files for github-pages branch (/docs)
-//
-gulp.task('build', ['copydocs']);
+gulp.task('no-serve', ['sass', 'copy']);
