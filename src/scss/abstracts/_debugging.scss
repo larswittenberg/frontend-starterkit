@@ -1,0 +1,119 @@
+//*******************************************************************************
+// Helpers - Grid Displayer
+//*******************************************************************************
+@if $showGridDisplayer == true {
+  #grid-displayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: padding-box;
+    pointer-events: none;
+    z-index: -10;
+  }
+
+  #grid-displayer .gd-container,
+  #grid-displayer .gd-row,
+  #grid-displayer .gd-column {
+    height: 100%;
+  }
+
+  #grid-displayer .gd-column {
+    border-width: 0 10px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    padding: 0px;
+    outline: rgb(255, 111, 111) solid 1px;
+    opacity: .12;
+    background-color: rgba(255, 111, 111, 0.6);
+    float: left;
+    width: 8.33333%;
+
+    @include breakpoint(sm) {
+      border-width: 0 15px;
+    }
+    @include breakpoint(xl) {
+      border-width: 0 20px;
+    }
+  }
+}
+
+@if $showGridDisplayer == false {
+  #grid-displayer {
+    display: none !important;
+  }
+}
+
+
+
+//*******************************************************************************
+// Helpers - Media Queries Debugging
+//
+// Inspiration: http://bueltge.de/test/media-query-debugger.php
+//*******************************************************************************
+// body:before {
+//   @include breakpoint(xs) {  }
+//   @include breakpoint(sm) {  }
+//   @include breakpoint(sl) {  }
+//   @include breakpoint(md) {  }
+//   @include breakpoint(lg) {  }
+//   @include breakpoint(xl) {  }
+// }
+
+@if $media-queries-debugging == true {
+  body:before {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    padding: .2em;
+    font-weight: 400;
+
+    @include breakpoint(xs) {
+      background: rgba(165, 42, 42, 0.8);
+      content: "XS";
+    }
+
+    @include breakpoint(sm) {
+      background: rgba(255, 0, 0, 0.8);
+      content: "SM";
+    }
+
+    @include breakpoint(sl) {
+      background: rgba(230, 120, 0, 0.8);
+      content: "SL";
+    }
+
+    @include breakpoint(md) {
+      background: rgba(0, 153, 153, 0.8);
+      content: "MD";
+    }
+
+    @include breakpoint(lg) {
+      background: rgba(205, 0, 116, 0.8);
+      content: "LG";
+    }
+
+    @include breakpoint(xl) {
+      background: rgba(76, 176, 252, 1);
+      content: "XL";
+    }
+  }
+}
+
+@if $media-queries-debugging == false {
+  body:before {
+    position: absolute;
+    z-index: -1;
+    top: -10000em;
+    left: -10000em;
+    color: #fff;
+    background-color: transparent;
+  }
+}

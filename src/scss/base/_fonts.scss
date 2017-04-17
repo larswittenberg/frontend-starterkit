@@ -1,21 +1,44 @@
 //*******************************************************************************
 // This file contains all @font-face declarations, if any.
+//
+// Source: XXXXX.com
+//
 //*******************************************************************************
 
 
+//
+// Tracking-Script
+//
+@import url("XXXXX");
+
+
 
 //
-// Font Regular
+// Font Light
 //
+@font-face{
+  font-family:"Font Family Regular Name";
+  src:url("../fonts/XXXXX.eot?#iefix");
+  src:url("../fonts/XXXXX.eot?#iefix") format("eot"),
+      url("../fonts/XXXXX.woff2") format("woff2"),
+      url("../fonts/XXXXX.woff") format("woff"),
+      url("../fonts/XXXXX.ttf") format("truetype"),
+      url("../fonts/XXXXX.svg") format("svg");
+}
 
 
 
 //
 // Font Bold
 //
+@font-face{
+  font-family:"Font Family Bold Name";
+  src:url("../fonts/XXXXX.eot?#iefix");
+  src:url("../fonts/XXXXX.eot?#iefix") format("eot"),
+      url("../fonts/XXXXX.woff2") format("woff2"),
+      url("../fonts/XXXXX.woff") format("woff"),
+      url("../fonts/XXXXX.ttf") format("truetype"),
+      url("../fonts/XXXXX.svg") format("svg");
+}
 
 
-
-//
-// Headlines
-//

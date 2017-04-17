@@ -43,7 +43,6 @@ gulp.task('sass', function() {
     .pipe( autoprefixer() )
     .pipe( sourcemaps.write('./') )
     .pipe( gulp.dest('./dist/css') )
-    .pipe( gulp.dest(publicFolder + 'css') )
     .pipe( browserSync.stream() );
 });
 

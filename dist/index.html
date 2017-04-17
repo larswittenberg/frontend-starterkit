@@ -11,8 +11,8 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#193549">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/ext/lazysizes.min.js" async></script>
     <style>
       .styleguide {
         margin-top: 60px;
@@ -49,15 +49,16 @@
       }
 
       .sg-colorbox {
-        width: 200px;
-        height: 300px;
+        width: 100%;
+        height: auto;
         margin-bottom: 10px;
         box-shadow: 4px 4px 10px rgba(64, 62, 62, 0.32);
         background-color: #fff;
       }
 
       .sg-colorbox__color {
-        height: 200px;
+        height: 0;
+                padding-top: 100%;
       }
 
       .sg-colorbox__label {
@@ -120,9 +121,16 @@
         </div>
         <div class="col-md-2">
           <div class="sg-colorbox">
-            <div class="sg-colorbox__color" style="background-color: #459bd5;"></div>
-            <p class="sg-colorbox__label">Brand Color Blue</p>
-            <code class="sg-code">$blue <br> #459bd5</code>
+            <div class="sg-colorbox__color" style="background-color: #193549;"></div>
+            <p class="sg-colorbox__label">Dark Blue</p>
+            <code class="sg-code">$dark <br> #193549</code>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="sg-colorbox">
+            <div class="sg-colorbox__color" style="background-color: #fe8906;"></div>
+            <p class="sg-colorbox__label">Orange</p>
+            <code class="sg-code">$orange <br> #fe8906</code>
           </div>
         </div>
       </div>

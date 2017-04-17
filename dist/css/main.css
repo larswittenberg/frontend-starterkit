@@ -1,13 +1,41 @@
+@import url("XXXXX");
 #grid-displayer {
   display: none !important; }
 
 body:before {
-  position: absolute;
-  z-index: -1;
-  top: -10000em;
-  left: -10000em;
-  color: #fff;
-  background-color: transparent; }
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  padding: .2em;
+  font-weight: 400; }
+  @media (max-width: 639px) {
+    body:before {
+      background: rgba(165, 42, 42, 0.8);
+      content: "XS"; } }
+  @media (min-width: 640px) {
+    body:before {
+      background: rgba(255, 0, 0, 0.8);
+      content: "SM"; } }
+  @media (min-width: 768px) {
+    body:before {
+      background: rgba(230, 120, 0, 0.8);
+      content: "SL"; } }
+  @media (min-width: 1024px) {
+    body:before {
+      background: rgba(0, 153, 153, 0.8);
+      content: "MD"; } }
+  @media (min-width: 1280px) {
+    body:before {
+      background: rgba(205, 0, 116, 0.8);
+      content: "LG"; } }
+  @media (min-width: 1520px) {
+    body:before {
+      background: #4cb0fc;
+      content: "XL"; } }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -588,6 +616,16 @@ output {
   display: none !important; }
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
+@font-face {
+  font-family: "Font Family Regular Name";
+  src: url("../fonts/XXXXX.eot?#iefix");
+  src: url("../fonts/XXXXX.eot?#iefix") format("eot"), url("../fonts/XXXXX.woff2") format("woff2"), url("../fonts/XXXXX.woff") format("woff"), url("../fonts/XXXXX.ttf") format("truetype"), url("../fonts/XXXXX.svg") format("svg"); }
+
+@font-face {
+  font-family: "Font Family Bold Name";
+  src: url("../fonts/XXXXX.eot?#iefix");
+  src: url("../fonts/XXXXX.eot?#iefix") format("eot"), url("../fonts/XXXXX.woff2") format("woff2"), url("../fonts/XXXXX.woff") format("woff"), url("../fonts/XXXXX.ttf") format("truetype"), url("../fonts/XXXXX.svg") format("svg"); }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -1922,33 +1960,49 @@ small,
   margin-top: auto !important;
   margin-bottom: auto !important; }
 
-.list-unstyled {
-  padding-left: 0;
-  list-style: none; }
+.background-color--black {
+  background-color: #000; }
 
-.list-inline {
-  padding-left: 0;
-  list-style: none; }
+.text-color--white {
+  color: #fff; }
 
-.list-inline-item {
-  display: inline-block; }
+.blockquote {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px; }
+  @media (min-width: 1024px) {
+    .blockquote {
+      padding: 60px 30px;
+      margin-top: 140px; } }
+  @media (min-width: 1280px) {
+    .blockquote {
+      padding: 80px 40px;
+      margin-top: 200px; } }
 
-.list-inline-item:not(:last-child) {
-  margin-right: 5px; }
+.blockquote p {
+  font-family: "Font Family Bold Name", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 40px; }
+  @media (min-width: 1024px) {
+    .blockquote p {
+      font-size: 2.4rem; } }
+  @media (min-width: 1280px) {
+    .blockquote p {
+      font-size: 3rem; } }
+  @media (min-width: 1520px) {
+    .blockquote p {
+      font-size: 3.4rem; } }
 
-.list {
-  padding-left: 20px; }
-
-.table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%; }
-  .table th,
-  .table td {
-    padding: 1rem; }
-  .table th {
-    text-align: left;
-    border-bottom: 1px solid #000; }
+.blockquote__footer cite {
+  font-size: 18px;
+  font-style: normal; }
+  @media (min-width: 1024px) {
+    .blockquote__footer cite {
+      font-size: 20px; } }
 
 .form-control {
   display: block;
@@ -1961,5 +2015,35 @@ small,
 
 textarea {
   min-height: 200px; }
+
+.list {
+  padding-left: 20px; }
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+.list--inline {
+  padding-left: 0;
+  list-style: none; }
+
+.list--inline-item li {
+  display: inline-block; }
+  .list--inline-item li:not(:last-child) {
+    margin-right: 5px; }
+
+.logo {
+  max-width: 200px; }
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+  .table th,
+  .table td {
+    padding: 1rem; }
+  .table th {
+    text-align: left;
+    border-bottom: 1px solid #000; }
 
 /*# sourceMappingURL=main.css.map */

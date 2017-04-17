@@ -4,7 +4,8 @@
 @import
   'abstracts/variables',
   'abstracts/functions',
-  'abstracts/mixins';
+  'abstracts/mixins',
+  'abstracts/debugging';
 
 
 // 2. Vendors
@@ -27,14 +28,17 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/menu',
   'layout/footer';
 
 // 5. Components
 @import
+  'components/blockquote',
   'components/buttons',
+  'components/forms',
   'components/lists',
-  'components/tables',
-  'components/forms';
+  'components/logo',
+  'components/tables';
 
 
 // 6. Page-specific styles

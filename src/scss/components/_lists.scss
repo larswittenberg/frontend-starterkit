@@ -3,29 +3,42 @@
 //*******************************************************************************
 
 
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
-.list-inline {
-  padding-left: 0;
-  list-style: none;
-}
-
-.list-inline-item {
-  display: inline-block;
-}
-
-.list-inline-item:not(:last-child) {
-  margin-right: 5px;
-}
-
-
-
 //
-//
+// List Default
 //
 .list {
   padding-left: 20px;
 }
+
+
+
+//
+// List unstyled - without Numbers/Bullets
+//
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+
+//
+.list--inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+
+//
+.list--inline-item  li {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+
+
+

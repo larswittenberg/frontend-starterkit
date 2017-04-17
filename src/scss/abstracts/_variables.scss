@@ -9,8 +9,8 @@
 // Einfach Reihenfolge der true/false Zeilen ändern,
 // zum einfachen aktivieren/deaktivieren
 //
-$media-queries-debugging: true;
 $media-queries-debugging: false;
+$media-queries-debugging: true;
 $showGridDisplayer: true;
 $showGridDisplayer: false;
 
@@ -21,6 +21,15 @@ $showGridDisplayer: false;
 //
 $dark: #193549;
 $orange: #fe8906;
+
+
+
+//
+// Fonts
+//
+$font-regular: "Font Family Regular Name", Helvetica, Arial, sans-serif;
+$font-bold:    "Font Family Bold Name", Helvetica, Arial, sans-serif;
+
 
 
 
