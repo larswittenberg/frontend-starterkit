@@ -44,8 +44,9 @@
 //
 // Font Family Helpers
 //
-.font-regular { font-family: $font-regular; }
-.font-bold    { font-family: $font-bold; }
+.font-regular { @include font-family(regular); }
+.font-light   { @include font-family(light); }
+.font-bold    { @include font-family(bold); }
 
 
 
