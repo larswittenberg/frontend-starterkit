@@ -107,6 +107,20 @@
 
 
 //
+// position:fixed page header and in-page anchors
+// http://stackoverflow.com/a/38106970/808113
+//
+.anchor[id] {
+  display: block;
+  content: "";
+  margin-top: -130px; // Set the Appropriate Height
+  height: 130px; // Set the Appropriate Height
+  visibility: hidden;
+}
+
+
+
+//
 // Fixed Body Helper body.locked
 // Disable Page Scrolling
 //
