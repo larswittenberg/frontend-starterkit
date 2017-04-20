@@ -105,7 +105,7 @@
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1>Frontend Starterkit</h1>
-          <p class="lead">Mini Styleguide als Ausgangsbasis für neue Projekte.</p>
+          <p class="lead">Mini Styleguide als Ausgangsbasis für neue Projekte. <small>(by <a href="https://twitter.com/larswittenberg">@larswittenberg</a>)</small></p>
         </div>
       </div>
     </div>
@@ -210,7 +210,7 @@
           <p>Impedit doloribus cupiditate quas sequi tempore illum, <a href="#">sit minus ratione</a> aliquid ea. Tempore laboriosam deserunt, ut nam officia voluptas illum architecto doloribus tenetur atque delectus consectetur repellat veniam obcaecati numquam.</p>
         </div>
         <div class="col-md-5">
-          <h1>Aut in deserunt provident eos consequatur, dolor iure magnam sed minima sunt doloribus</h1>
+          <h1>Aut in deserunt provident eos consequatur.</h1>
           <p>Dolores atque mollitia repellendus, quidem itaque non, quas laborum aliquam. Doloremque magni reprehenderit sapiente eveniet veniam, eaque? Aliquid in eaque praesentium, perferendis dicta cum repudiandae iste nihil itaque quidem. Unde?</p>
         </div>
         <div class="col-md-10 col-md-offset-2">
@@ -316,6 +316,16 @@
               <input type="email" class="form-control" id="email" placeholder="E-Mail Adresse">
             </div>
             <div class="form-group">
+              <label for="exampleSelect1" class="sr-only">Select Box</label>
+              <select class="form-control" id="exampleSelect1">
+                <option>Select 1</option>
+                <option>Select 2</option>
+                <option>Select 3</option>
+                <option>Select 4</option>
+                <option>Select 5</option>
+              </select>
+            </div>
+            <div class="form-group">
               <label for="text" class="sr-only">Nachricht</label>
               <textarea class="form-control" rows="1" id="text" placeholder="Nachricht"></textarea>
             </div>
@@ -324,7 +334,14 @@
                 <input type="checkbox" value="">Checkbox
               </label>
             </div>
-            <button class="btn" type="submit" name="--contactform[__currentPage]" value="1"> Senden </button>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                Radio Option
+              </label>
+            </div>
+            <button class="btn" type="submit" name="" value="1"> Senden </button>
+            <a href="" class="btn">Button-Link</a>
           </form>
         </div>
       </div>
@@ -341,8 +358,8 @@
               <tr>
                 <th>Vorname</th>
                 <th>Nachname</th>
-                <th>Geburtsdatum</th>
                 <th>Job</th>
+                <th>Geburtsdatum</th>
               </tr>
             </thead>
             <tbody>
