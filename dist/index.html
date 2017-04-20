@@ -11,11 +11,44 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fe8906">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/main.css">
     <script src="js/ext/lazysizes.min.js" async></script>
     <style>
       .styleguide {
         margin-top: 60px;
+      }
+
+      .sg-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 90px;
+        overflow: hidden;
+        background-color: #eee;
+      }
+
+      .sg-menu-button {
+        padding-top: 5px;
+        padding-left: 35px;
+      }
+
+      .sg-menu:hover {
+        height: auto;
+        cursor: pointer;
+      }
+
+      .sg-menu .list,
+      .sg-menu li {
+        margin: 0;
+      }
+
+      .sg-menu a {
+        display: block;
+        font-size: .8rem;
+        padding: 0 8px;
       }
 
       .sg-headline {
@@ -58,7 +91,7 @@
 
       .sg-colorbox__color {
         height: 0;
-                padding-top: 100%;
+        padding-top: 100%;
       }
 
       .sg-colorbox__label {
@@ -101,7 +134,22 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="sg-menu">
+      <p class="sg-menu-button">Menü</p>
+      <ul class="list list--unstyled">
+        <li><a href="#top">> TOP <</a></li>
+        <li><a href="#Farben">Farben</a></li>
+        <li><a href="#Fonts">Fonts</a></li>
+        <li><a href="#Logo">Logo</a></li>
+        <li><a href="#Typografie">Typografie</a></li>
+        <li><a href="#Listen">Listen</a></li>
+        <li><a href="#Blockquote">Blockquote</a></li>
+        <li><a href="#Formulare">Formulare</a></li>
+        <li><a href="#Tabellen">Tabellen</a></li>
+      </ul>
+    </div>
+
+    <div class="container" id="top">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <h1>Frontend Starterkit</h1>
@@ -116,7 +164,7 @@
 
       <div class="row sg-row">
         <div class="col-md-2">
-          <h1 class="sg-headline" id="farben">Farben</h1>
+          <h1 class="sg-headline" id="Farben">Farben</h1>
         </div>
         <div class="col-md-2">
           <div class="sg-colorbox">
@@ -138,7 +186,7 @@
 
       <div class="row sg-row">
         <div class="col-md-2">
-          <h1 class="sg-headline" id="fonts">Fonts</h1>
+          <h1 class="sg-headline" id="Fonts">Fonts</h1>
         </div>
         <div class="col-md-10 mb-5">
           <h1 class="sg-headline">Font-Stack default</h1>
@@ -160,7 +208,7 @@
 
       <div class="row sg-row">
         <div class="col-md-2">
-          <h1 class="sg-headline" id="logo">Logo</h1>
+          <h1 class="sg-headline" id="Logo">Logo</h1>
         </div>
         <div class="col-md-3">
           <code class="sg-code">.logo</code>
@@ -174,7 +222,7 @@
 
       <div class="row sg-row">
         <div class="col-sm-3 col-md-2">
-          <h1 class="sg-headline" id="typo">Typografie</h1>
+          <h1 class="sg-headline" id="Typografie">Typografie</h1>
         </div>
         <div class="col-md-4">
           <h1>Headline H1</h1>
@@ -235,7 +283,7 @@
 
       <div class="row sg-row">
         <div class="col-md-2">
-          <h1 class="sg-headline" id="listen">Listen</h1>
+          <h1 class="sg-headline" id="Listen">Listen</h1>
         </div>
         <div class="col-md-2">
           <code class="sg-code">ol.list</code>
@@ -285,7 +333,7 @@
 
       <div class="row sg-row">
         <div class="col-md-2">
-          <h1 class="sg-headline" id="blockquote">Blockquote <span class="mark small">WIP</span></h1>
+          <h1 class="sg-headline" id="Blockquote">Blockquote <span class="mark small">WIP</span></h1>
         </div>
         <div class="col-md-9">
           <blockquote class="blockquote">
@@ -303,7 +351,7 @@
 
       <div class="row sg-row">
         <div class="col-sm-3 col-md-2">
-          <h1 class="sg-headline" id="formulare">Formulare <span class="mark small">WIP</span></h1>
+          <h1 class="sg-headline" id="Formulare">Formulare <span class="mark small">WIP</span></h1>
         </div>
         <div class="col-md-8">
           <form action="#" class="form">
@@ -350,7 +398,7 @@
 
       <div class="row sg-row">
         <div class="col-sm-3 col-md-2">
-          <h1 class="sg-headline" id="tabellen">Tabellen <span class="mark small">WIP</span></h1>
+          <h1 class="sg-headline" id="Tabellen">Tabellen <span class="mark small">WIP</span></h1>
         </div>
         <div class="col-md-8">
           <table class="table table--striped table--hover">

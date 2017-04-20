@@ -23,7 +23,6 @@ https://larswittenberg.github.io/frontend-starterkit/
 
 ## Styleguide
 
-* Fixed Navi in der Kopfzeile
 * Sprungmarken zu den Abschnitten (rechts oben > position:fixed;)
   * Fonts
     * Alle Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen in allen Projekt-Fonts ausgeben
