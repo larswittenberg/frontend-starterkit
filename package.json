@@ -6,10 +6,13 @@
   "devDependencies": {
     "browser-sync": "latest",
     "gulp": "latest",
-    "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
     "gulp-notify": "latest",
     "gulp-plumber": "latest",
-    "gulp-autoprefixer": "latest"
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest"
   }
 }

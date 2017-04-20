@@ -1,9 +1,12 @@
 var gulp        = require('gulp'),
     browserSync = require('browser-sync').create(),
+    concat      = require('gulp-concat'),
     sass        = require('gulp-sass'),
     sourcemaps  = require('gulp-sourcemaps'),
     plumber     = require('gulp-plumber'),
     notify      = require('gulp-notify'),
+    rename      = require('gulp-rename'),
+    uglify      = require('gulp-uglify'),
     autoprefixer= require('gulp-autoprefixer');
 
 //
@@ -39,7 +42,7 @@ gulp.task('sass', function() {
   return gulp.src('./src/scss/**/*.*')
     .pipe( plumber( {errorHandler: notify.onError(scssError)} ) )
     .pipe( sourcemaps.init() )
-    .pipe( sass() )
+    .pipe( sass().on('error', sass.logError) )
     .pipe( autoprefixer() )
     .pipe( sourcemaps.write('./') )
     .pipe( gulp.dest('./dist/css') )

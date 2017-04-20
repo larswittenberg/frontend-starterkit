@@ -42,6 +42,14 @@
 
 
 //
+// Font Family Helpers
+//
+.font-regular { font-family: $font-regular; }
+.font-bold    { font-family: $font-bold; }
+
+
+
+//
 // Text Alignment classes
 //
 .text-left   { text-align: left; }
@@ -99,6 +107,59 @@
 
 
 //
+// Fixed Body Helper body.locked
+// Disable Page Scrolling
+//
+body.locked {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+//
+// Images
+//
+// Broken Images: https://bitsofco.de/styling-broken-images/
+//
+img {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  min-height: 40px;
+  text-align: center;
+
+  &:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: center center no-repeat #f0f0f0;
+    background-size: 40px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDAwIDMwNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDAwIDMwNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgb3BhY2l0eT0iMC4xNSI+PGRlZnM+PHJlY3QgaWQ9IlNWR0lEXzFfIiB4PSItNTYiIHk9Ii0xMDQiIG9wYWNpdHk9IjAuMTUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIi8+PC9kZWZzPjxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGQ9Ik0xNiwyODhoMzY4VjE2SDE2VjI4OHogTTQwMCwzMDRIMFYwaDQwMFYzMDR6Ii8+PHBvbHlnb24gY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzRfKSIgcG9pbnRzPSIyNjQsMjQzLjMgMTY4LDE0Ny4zIDc3LjcsMjM3LjcgNjYuMywyMjYuMyAxNjgsMTI0LjcgMjY0LDIyMC43IDI5Ny4yLDE4Ny41IDMzMy44LDIyNi41IDMyMi4yLDIzNy41IDI5Ni44LDIxMC41Ii8+PHBhdGggZD0iTTI5Niw4MGMtMTMuMiwwLTI0LDEwLjgtMjQsMjRzMTAuOCwyNCwyNCwyNHMyNC0xMC44LDI0LTI0UzMwOS4yLDgwLDI5Niw4MHogTTI5NiwxNDRjLTIyLjEsMC00MC0xNy45LTQwLTQwIHMxNy45LTQwLDQwLTQwczQwLDE3LjksNDAsNDBTMzE4LjEsMTQ0LDI5NiwxNDR6Ii8+PC9nPjwvc3ZnPg==);
+  }
+}
+
+
+
+//
+// Lazyload Image
+//
+.lazyload,
+.lazyloading {
+  background: center center no-repeat #f0f0f0;
+  background-size: 40px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDAwIDMwNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDAwIDMwNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgb3BhY2l0eT0iMC4xNSI+PGRlZnM+PHJlY3QgaWQ9IlNWR0lEXzFfIiB4PSItNTYiIHk9Ii0xMDQiIG9wYWNpdHk9IjAuMTUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIi8+PC9kZWZzPjxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGQ9Ik0xNiwyODhoMzY4VjE2SDE2VjI4OHogTTQwMCwzMDRIMFYwaDQwMFYzMDR6Ii8+PHBvbHlnb24gY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzRfKSIgcG9pbnRzPSIyNjQsMjQzLjMgMTY4LDE0Ny4zIDc3LjcsMjM3LjcgNjYuMywyMjYuMyAxNjgsMTI0LjcgMjY0LDIyMC43IDI5Ny4yLDE4Ny41IDMzMy44LDIyNi41IDMyMi4yLDIzNy41IDI5Ni44LDIxMC41Ii8+PHBhdGggZD0iTTI5Niw4MGMtMTMuMiwwLTI0LDEwLjgtMjQsMjRzMTAuOCwyNCwyNCwyNHMyNC0xMC44LDI0LTI0UzMwOS4yLDgwLDI5Niw4MHogTTI5NiwxNDRjLTIyLjEsMC00MC0xNy45LTQwLTQwIHMxNy45LTQwLDQwLTQwczQwLDE3LjksNDAsNDBTMzE4LjEsMTQ0LDI5NiwxNDR6Ii8+PC9nPjwvc3ZnPg==);
+}
+
+
+
+//
 // Responsive images
 //
 .img-fluid {
@@ -140,13 +201,12 @@
 }
 
 
+
 //
-// Fixed Body Helper body.locked
+// iFrame
 //
-.locked {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
+iframe {
+  border: 0;
 }
 
 

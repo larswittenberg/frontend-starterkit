@@ -13,31 +13,48 @@
 
 
 //
-// List unstyled - without Numbers/Bullets
+// List Items
 //
-.list--unstyled {
-  padding-left: 0;
-  list-style: none;
+.list li {
+  margin-bottom: .5rem;
 }
 
 
 
+
+//
+// List without Numbers/Bullets
+//
+.list--unstyled {
+  padding-left: 0;
+
+  ul {
+    margin-top: .5rem;
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+
+//
+// List Inline
 //
 .list--inline {
   padding-left: 0;
   list-style: none;
-}
 
+  li {
+    display: inline-block;
 
-
-//
-.list--inline-item  li {
-  display: inline-block;
-
-  &:not(:last-child) {
-    margin-right: 5px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
   }
 }
+
 
 
 

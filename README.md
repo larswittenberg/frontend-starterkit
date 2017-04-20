@@ -13,6 +13,7 @@ https://larswittenberg.github.io/frontend-starterkit/
 
 ## Todos
 
+* Styleguide ohne Grid aufbauen?
 * JavaScript minifizieren
 * Weitere HTML5 Boilerplate Elemente übernehmen?
 * Breakpoint Debugger
@@ -23,7 +24,7 @@ https://larswittenberg.github.io/frontend-starterkit/
 ## Styleguide
 
 * Fixed Navi in der Kopfzeile
-* Sprungmarken zu den Abschnitten
+* Sprungmarken zu den Abschnitten (rechts oben > position:fixed;)
   * Fonts
     * Alle Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen in allen Projekt-Fonts ausgeben
   * Typo

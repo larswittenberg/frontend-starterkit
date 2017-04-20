@@ -1,3 +1,44 @@
 //*******************************************************************************
 // BUTTONS
 //*******************************************************************************
+
+
+.btn {
+  @include font-smoothing(on);
+  background-color: #000;
+  color: #fff;
+  font-family: $font-bold;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 15px 30px;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  @include breakpoint(lg) {
+    font-size: 24px;
+    padding: 15px 40px;
+  }
+}
