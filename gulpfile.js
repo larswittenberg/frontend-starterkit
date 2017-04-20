@@ -100,6 +100,26 @@ gulp.task('copyfonts', function() {
 gulp.task('copy', ['copyhtml', 'copyimages', 'copyjs', 'copyfonts']);
 
 
+
+//
+// Copy dist to docs
+//
+gulp.task('copydocs', function() {
+  gulp.src([
+    './dist/**/*.*'
+  ])
+  .pipe( gulp.dest('./docs') );
+});
+
+
+
+//
+// Build GitHub Pages - copy files for github-pages branch (/docs)
+//
+gulp.task('github', ['copydocs']);
+
+
+
 //
 // Default Task
 //
