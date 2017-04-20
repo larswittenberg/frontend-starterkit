@@ -2065,6 +2065,9 @@ iframe {
 textarea {
   min-height: 200px; }
 
+.svg-icon {
+  width: 50px; }
+
 .list {
   padding-left: 20px; }
 
