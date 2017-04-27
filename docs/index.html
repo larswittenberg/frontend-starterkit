@@ -1,0 +1,477 @@
+<!doctype html>
+<html class="no-js" lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Frontend Starterkit</title>
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fe8906">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/ext/lazysizes.min.js" async></script>
+    <style>
+      .styleguide {
+        margin-top: 60px;
+      }
+
+      .sg-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 90px;
+        overflow: hidden;
+        background-color: #eee;
+      }
+
+      .sg-menu-button {
+        padding-top: 5px;
+        padding-left: 35px;
+      }
+
+      .sg-menu:hover {
+        height: auto;
+        cursor: pointer;
+      }
+
+      .sg-menu .list,
+      .sg-menu li {
+        margin: 0;
+      }
+
+      .sg-menu a {
+        display: block;
+        font-size: .8rem;
+        padding: 0 8px;
+      }
+
+      .sg-headline {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .sg-row {
+        margin-bottom: 60px;
+      }
+
+      .sg-hr {
+        margin: 60px 0;
+        border: none;
+        border-top: 2px solid #e2e2e2;
+      }
+
+      .sg-code {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #bd4147;
+        background-color: #f7f7f9;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+
+      .sg-headline .sg-code {
+        margin-bottom: 0;
+      }
+
+      .sg-colorbox {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        box-shadow: 4px 4px 10px rgba(64, 62, 62, 0.32);
+        background-color: #fff;
+      }
+
+      .sg-colorbox__color {
+        height: 0;
+        padding-top: 100%;
+      }
+
+      .sg-colorbox__label {
+        padding: 4px 8px;
+      }
+
+      .sg-colorbox__label {
+        font-size: 1.2rem;
+      }
+
+      .sg-colorbox .sg-code {
+        margin: 0 4px;
+        width: calc(100% - 8px);
+        background-color: transparent;
+      }
+
+      .sg-helper-visible .menu-button {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="grid-displayer">
+      <div class="gd-container container">
+        <div class="gd-row row">
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+          <div class="gd-column col-xs-1">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sg-menu">
+      <p class="sg-menu-button">Menü</p>
+      <ul class="list list--unstyled">
+        <li><a href="#top">-TOP-</a></li>
+        <li><a href="#Farben">Farben</a></li>
+        <li><a href="#Fonts">Fonts</a></li>
+        <li><a href="#Typografie">Typografie</a></li>
+        <li><a href="#Logo">Logo</a></li>
+        <li><a href="#Icons">Icons</a></li>
+        <li><a href="#Listen">Listen</a></li>
+        <li><a href="#Blockquote">Blockquote</a></li>
+        <li><a href="#Formulare">Formulare</a></li>
+        <li><a href="#Tabellen">Tabellen</a></li>
+      </ul>
+    </div>
+
+    <div class="container" id="top">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Frontend Starterkit</h1>
+          <p class="lead">Mini Styleguide als Ausgangsbasis für neue Projekte. <small>(by <a href="https://twitter.com/larswittenberg">@larswittenberg</a>)</small></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container styleguide">
+
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="Farben">Farben</h1>
+        </div>
+        <div class="col-md-2">
+          <div class="sg-colorbox">
+            <div class="sg-colorbox__color background-color--blue-dark"></div>
+            <p class="sg-colorbox__label">Blue Dark</p>
+            <code class="sg-code">$blue-dark <br> #193549</code>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="sg-colorbox">
+            <div class="sg-colorbox__color background-color--blue-light"></div>
+            <p class="sg-colorbox__label">Blue Light</p>
+            <code class="sg-code">$blue-light <br> #008FEC</code>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="sg-colorbox">
+            <div class="sg-colorbox__color background-color--orange"></div>
+            <p class="sg-colorbox__label">Orange</p>
+            <code class="sg-code">$orange <br> #fe8906</code>
+          </div>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="Fonts">Fonts</h1>
+        </div>
+        <div class="col-md-10 mb-5">
+          <h1 class="sg-headline">Font-Stack default</h1>
+          <p>-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;</p>
+          <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&</p>
+          <p>&nbsp;</p>
+          <h1 class="sg-headline mb-2">Font-Stack Regular <code class="sg-code">.font-regular // @include font-family(regular);</code></h1>
+          <p class="font-regular">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&amp;</p>
+          <p>&nbsp;</p>
+          <h1 class="sg-headline mb-2">Font-Stack Light <code class="sg-code">.font-light // @include font-family(light);</code></h1>
+          <p class="font-light">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&amp;</p>
+          <p>&nbsp;</p>
+          <h1 class="sg-headline mb-2">Font-Stack Bold <code class="sg-code">.font-bold // @include font-family(bold);</code></h1>
+          <p class="font-bold">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz üöäÜÖÄ 1234567890 !?ß@$%&amp;</p>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-sm-3 col-md-2">
+          <h1 class="sg-headline" id="Typografie">Typografie</h1>
+        </div>
+        <div class="col-md-4">
+          <h1>Headline H1</h1>
+          <h2>Headline H2</h2>
+          <h3>Headline H3</h3>
+          <h4>Headline H4</h4>
+        </div>
+        <div class="col-md-4">
+          <h1 class="display-1">Display 1</h1>
+          <h1 class="display-2">Display 2</h1>
+          <h1 class="display-3">Display 3</h1>
+          <h1 class="display-4">Display 4</h1>
+        </div>
+        <div class="col-md-10 col-md-offset-2">
+          <hr class="sg-hr">
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+          <p><del>This line of text is meant to be treated as deleted text.</del></p>
+          <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+          <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+          <p><u>This line of text will render as underlined</u></p>
+          <p><small>This line of text is meant to be treated as fine print.</small></p>
+          <p><strong>This line rendered as bold text.</strong></p>
+          <p><em>This line rendered as italicized text.</em></p>
+        </div>
+        <div class="col-md-10 col-md-offset-2">
+          <hr class="sg-hr">
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+          <h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+          <p>Lorem Ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sit <i>accusamus</i> amet at voluptatem <strong>quibusdam molestiae sint</strong> inventore dolor magnam! Ipsa, porro quas expedita provident dolore nihil recusandae eius error.</p>
+          <p>Impedit doloribus cupiditate quas sequi tempore illum, <a href="#">sit minus ratione</a> aliquid ea. Tempore laboriosam deserunt, ut nam officia voluptas illum architecto doloribus tenetur atque delectus consectetur repellat veniam obcaecati numquam.</p>
+        </div>
+        <div class="col-md-5">
+          <h1>Aut in deserunt provident eos consequatur.</h1>
+          <p>Dolores atque mollitia repellendus, quidem itaque non, quas laborum aliquam. Doloremque magni reprehenderit sapiente eveniet veniam, eaque? Aliquid in eaque praesentium, perferendis dicta cum repudiandae iste nihil itaque quidem. Unde?</p>
+        </div>
+        <div class="col-md-10 col-md-offset-2">
+          <hr class="sg-hr">
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <p class="article__metadata small mb-0"><span class="metadata__date">11. November 2016, 21:46 Uhr</span></p>
+          <h1 class="article__headline">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte</h1>
+          <p class="article__teaser lead">
+            Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora magnam <a href="#">magni voluptates</a>, consequuntur est eos ab. Placeat aliquid ullam explicabo officia, laboriosam nisi omnis maxime, dolores eum eaque, natus atque.
+          </p>
+          <p>
+            Dolores atque mollitia repellendus, quidem itaque non, quas laborum aliquam. Doloremque magni reprehenderit sapiente eveniet veniam, eaque? Aliquid in eaque praesentium, perferendis dicta cum repudiandae iste nihil itaque quidem. Unde?
+          </p>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="Logo">Logo</h1>
+        </div>
+        <div class="col-md-3">
+          <code class="sg-code">.logo</code>
+          <p>
+            <img src="/" alt="Logo" class="logo" width="200" height="150">
+          </p>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="Icons">Icons</h1>
+        </div>
+        <div class="col-md-3">
+          <code class="sg-code">.icon</code>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-icon svg-icon-twitter" preserveAspectRatio="xMinYMin meet" role="img" aria-label="">
+              <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/>
+            </svg>
+          </p>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="Listen">Listen</h1>
+        </div>
+        <div class="col-md-2">
+          <code class="sg-code">ol.list</code>
+          <ol class="list">
+            <li>list item 1</li>
+            <li>list item 2
+              <ol>
+                <li>list item 2.1</li>
+                <li>list item 2.2</li>
+                <li>list item 2.3</li>
+              </ol>
+            </li>
+            <li>list item 3</li>
+          </ol>
+        </div>
+        <div class="col-md-2">
+          <code class="sg-code">ul.list</code>
+          <ul class="list">
+            <li>list item 1</li>
+            <li>list item 2
+              <ul>
+                <li>list item 2.1</li>
+                <li>list item 2.2</li>
+                <li>list item 2.3</li>
+              </ul>
+            </li>
+            <li>list item 3</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <code class="sg-code">.list.list--unstyled</code>
+          <ul class="list list--unstyled">
+            <li>list item 1</li>
+            <li>list item 2
+              <ul>
+                <li>list item 2.1</li>
+                <li>list item 2.2</li>
+                <li>list item 2.3</li>
+              </ul>
+            </li>
+            <li>list item 3</li>
+          </ul>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="Blockquote">Blockquote <span class="mark small">WIP</span></h1>
+        </div>
+        <div class="col-md-9">
+          <blockquote class="blockquote">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque delectus quod esse, nihil voluptatem fugiat, ullam recusandae repellendus alias repudiandae, maxime, est excepturi unde explicabo harum. Nisi et, laboriosam hic!
+            </p>
+            <footer class="blockquote__footer">
+              <cite>Autor vom Zitat</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-sm-3 col-md-2">
+          <h1 class="sg-headline" id="Formulare">Formulare <span class="mark small">WIP</span></h1>
+        </div>
+        <div class="col-md-8">
+          <form action="#" class="form" name="form">
+            <div class="form-group">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">E-Mail Adresse</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail Adresse">
+            </div>
+            <div class="form-group">
+              <label for="exampleSelect1" class="sr-only">Select Box</label>
+              <select class="form-control" id="exampleSelect1" name="select">
+                <option>Select 1</option>
+                <option>Select 2</option>
+                <option>Select 3</option>
+                <option>Select 4</option>
+                <option>Select 5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="text" class="sr-only">Nachricht</label>
+              <textarea class="form-control" rows="1" id="text" name="message" placeholder="Nachricht"></textarea>
+            </div>
+            <div class="checkbox">
+              <label for="checkbox">
+                <input type="checkbox" value="" name="checkbox" id="checkbox">Checkbox
+              </label>
+            </div>
+            <div class="form-check">
+              <label for="optionsRadios1" class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                Radio Option
+              </label>
+            </div>
+            <button class="btn" type="submit" name="send" value="1">Senden</button>
+            <a href="/" class="btn">Button-Link</a>
+          </form>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-sm-3 col-md-2">
+          <h1 class="sg-headline" id="Tabellen">Tabellen <span class="mark small">WIP</span></h1>
+        </div>
+        <div class="col-md-8">
+          <table class="table table--striped table--hover">
+            <thead>
+              <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Job</th>
+                <th>Geburtsdatum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Max</td>
+                <td>Mustermann</td>
+                <td>Musterjob</td>
+                <td>01.01.1980</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+<hr class="sg-hr">
+
+      <div class="row sg-row">
+        <div class="col-md-2">
+          <h1 class="sg-headline" id="xxx">xxx</h1>
+        </div>
+        <div class="col-md-10">
+
+        </div>
+      </div>
+
+
+    </div><!-- .container.styleguide -->
+
+
+    <script src="js/ext/jquery-3.1.custom.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/ext/jquery-3.1.1.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>
+
