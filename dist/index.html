@@ -137,7 +137,7 @@
     <div class="sg-menu">
       <p class="sg-menu-button">Menü</p>
       <ul class="list list--unstyled">
-        <li><a href="#top">> TOP <</a></li>
+        <li><a href="#top">-TOP-</a></li>
         <li><a href="#Farben">Farben</a></li>
         <li><a href="#Fonts">Fonts</a></li>
         <li><a href="#Typografie">Typografie</a></li>
@@ -275,7 +275,7 @@
         <div class="col-md-3">
           <code class="sg-code">.logo</code>
           <p>
-            <img src="" alt="Logo" class="logo" width="200" height="150">
+            <img src="/" alt="Logo" class="logo" width="200" height="150">
           </p>
         </div>
       </div>
@@ -371,18 +371,18 @@
           <h1 class="sg-headline" id="Formulare">Formulare <span class="mark small">WIP</span></h1>
         </div>
         <div class="col-md-8">
-          <form action="#" class="form">
+          <form action="#" class="form" name="form">
             <div class="form-group">
               <label for="name" class="sr-only">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Name">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name">
             </div>
             <div class="form-group">
               <label for="email" class="sr-only">E-Mail Adresse</label>
-              <input type="email" class="form-control" id="email" placeholder="E-Mail Adresse">
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail Adresse">
             </div>
             <div class="form-group">
               <label for="exampleSelect1" class="sr-only">Select Box</label>
-              <select class="form-control" id="exampleSelect1">
+              <select class="form-control" id="exampleSelect1" name="select">
                 <option>Select 1</option>
                 <option>Select 2</option>
                 <option>Select 3</option>
@@ -392,21 +392,21 @@
             </div>
             <div class="form-group">
               <label for="text" class="sr-only">Nachricht</label>
-              <textarea class="form-control" rows="1" id="text" placeholder="Nachricht"></textarea>
+              <textarea class="form-control" rows="1" id="text" name="message" placeholder="Nachricht"></textarea>
             </div>
             <div class="checkbox">
-              <label>
-                <input type="checkbox" value="">Checkbox
+              <label for="checkbox">
+                <input type="checkbox" value="" name="checkbox" id="checkbox">Checkbox
               </label>
             </div>
             <div class="form-check">
-              <label class="form-check-label">
+              <label for="optionsRadios1" class="form-check-label">
                 <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
                 Radio Option
               </label>
             </div>
-            <button class="btn" type="submit" name="" value="1"> Senden </button>
-            <a href="" class="btn">Button-Link</a>
+            <button class="btn" type="submit" name="send" value="1">Senden</button>
+            <a href="/" class="btn">Button-Link</a>
           </form>
         </div>
       </div>
