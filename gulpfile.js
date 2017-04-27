@@ -114,14 +114,8 @@ gulp.task('copydocs', function() {
 
 
 //
-// Build GitHub Pages - copy files for github-pages branch (/docs)
-//
-gulp.task('github', ['copydocs']);
-
-
-
-//
-// Default Task
+// Default Tasks
 //
 gulp.task('default', ['serve', 'copy']);
 gulp.task('no-serve', ['sass', 'copy']);
+gulp.task('github', ['copydocs']); // Build GitHub Pages - copy files for github-pages branch (/docs)
