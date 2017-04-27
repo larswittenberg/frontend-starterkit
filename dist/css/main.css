@@ -2061,17 +2061,29 @@ iframe {
   margin-top: auto !important;
   margin-bottom: auto !important; }
 
+.text-color--black {
+  color: #000; }
+
 .background-color--black {
   background-color: #000; }
+
+.text-color--white {
+  color: #fff; }
+
+.background-color--white {
+  background-color: #fff; }
+
+.text-color--dark {
+  color: #193549; }
 
 .background-color--dark {
   background-color: #193549; }
 
+.text-color--orange {
+  color: #fe8906; }
+
 .background-color--orange {
   background-color: #fe8906; }
-
-.text-color--white {
-  color: #fff; }
 
 .btn {
   -webkit-font-smoothing: antialiased;

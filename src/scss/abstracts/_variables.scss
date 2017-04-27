@@ -20,9 +20,14 @@ $showGridDisplayer: false;
 
 //
 // Colors
+// Get one Value: .test { color: map-get($colors, orange); }
 //
-$dark: #193549;
-$orange: #fe8906;
+$colors: (
+  black: #000,
+  white: #fff,
+  dark: #193549,
+  orange: #fe8906,
+);
 
 
 

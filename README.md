@@ -16,7 +16,6 @@ https://larswittenberg.github.io/frontend-starterkit/
 * Styleguide ohne Grid aufbauen?
 * JavaScript minifizieren
 * Weitere HTML5 Boilerplate Elemente übernehmen?
-* SCSS Colors Map + Helper Klassen generieren
 
 
 ## Styleguide

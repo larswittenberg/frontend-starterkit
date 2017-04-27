@@ -2,20 +2,11 @@
 // COLOR HELPERS
 //*******************************************************************************
 
-//
-// Background Colors
-//
-.background-color--black  { background-color: #000; }
-.background-color--dark   { background-color: $dark; }
-.background-color--orange { background-color: $orange; }
-
-
-
-
 
 //
-// Text Colors
+// For each key in the map, created an own class
 //
-.text-color--white {
-  color: #fff;
+@each $name, $value in $colors {
+  .text-color--#{$name} { color: $value; }
+  .background-color--#{$name} { background-color: $value; }
 }
