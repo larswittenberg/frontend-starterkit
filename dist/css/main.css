@@ -36,6 +36,56 @@ body:before {
       background: #4cb0fc;
       content: "XL"; } }
 
+*[style] {
+  box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.5); }
+
+a:not([href]),
+a[href="#"],
+a[href=""],
+a[href*="javascript:void(0)"] {
+  box-shadow: 0 0 0 5px rgba(0, 0, 255, 0.5); }
+
+img:not([alt]),
+img[alt=""] {
+  box-shadow: 0 0 5px 5px rgba(255, 0, 0, 0.9); }
+
+html:not([lang]),
+html[lang=""] {
+  box-shadow: 0 0 0 5px rgba(255, 127, 80, 0.5); }
+
+meta[charset]:not([charset="UTF-8"]) {
+  box-shadow: 0 0 0 5px rgba(220, 20, 60, 0.5); }
+
+meta[charset="UTF-8"]:not(:first-child) {
+  box-shadow: 0 0 0 5px rgba(220, 20, 60, 0.5); }
+
+meta[name="viewport"][content*="user-scalable=no"],
+meta[name="viewport"][content*="maximum-scale"],
+meta[name="viewport"][content*="minimum-scale"] {
+  box-shadow: 0 0 0 5px rgba(255, 0, 255, 0.5); }
+
+input:not([id]),
+select:not([id]),
+textarea:not([id]) {
+  box-shadow: 0 0 0 5px rgba(218, 112, 214, 0.5); }
+
+label:not([for]) {
+  box-shadow: 0 0 0 5px rgba(218, 112, 214, 0.5); }
+
+input:not([name]),
+select:not([name]),
+textarea:not([name]),
+form:not([name]):not([id]) {
+  box-shadow: 0 0 0 5px rgba(128, 0, 128, 0.5); }
+
+button:empty,
+a:empty {
+  box-shadow: 0 0 0 5px rgba(100, 149, 237, 0.5); }
+
+script[type="text/javascript"],
+link[rel="stylesheet"][type="text/css"] {
+  box-shadow: 0 0 0 5px rgba(0, 128, 128, 0.5); }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2013,6 +2063,12 @@ iframe {
 
 .background-color--black {
   background-color: #000; }
+
+.background-color--dark {
+  background-color: #193549; }
+
+.background-color--orange {
+  background-color: #fe8906; }
 
 .text-color--white {
   color: #fff; }
