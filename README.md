@@ -16,22 +16,12 @@ https://larswittenberg.github.io/frontend-starterkit/
 * Styleguide ohne Grid aufbauen?
 * JavaScript minifizieren
 * Weitere HTML5 Boilerplate Elemente übernehmen?
-* Breakpoint Debugger
-* Styleguide Template aufbauen
 * SCSS Colors Map + Helper Klassen generieren
 
 
 ## Styleguide
 
-* Sprungmarken zu den Abschnitten (rechts oben > position:fixed;)
-  * Fonts
-    * Alle Groß- und Kleinbuchstaben, Ziffern und Sonderzeichen in allen Projekt-Fonts ausgeben
-  * Typo
-  * Helper
-  * Grid
-  * Farben
-  * Listen
-  * Buttons
-  * Formular Elemente
-  * Icons
+* Helper
+* Grid
+* Icons
 * Extra Font-Tester Datei erstellen
