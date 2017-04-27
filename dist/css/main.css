@@ -1996,11 +1996,17 @@ iframe {
 .background-color--white {
   background-color: #fff; }
 
-.text-color--dark {
+.text-color--blue-dark {
   color: #193549; }
 
-.background-color--dark {
+.background-color--blue-dark {
   background-color: #193549; }
+
+.text-color--blue-light {
+  color: #008FEC; }
+
+.background-color--blue-light {
+  background-color: #008FEC; }
 
 .text-color--orange {
   color: #fe8906; }
